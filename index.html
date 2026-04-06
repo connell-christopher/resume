@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Connell Christopher - Bug Hunter & Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Connell Christopher</h1>
+  <p>Bug Hunter & Web Developer | OSCP Certified</p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="about">
+  <img src="assets/about.png" alt="Connell Christopher">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I’m Connell Christopher, a bug hunter and web developer focused on identifying vulnerabilities, fixing frontend issues, and building secure, responsive applications.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>My Skills (Click)</h2>
+
+  <div class="skills-list">
+    <div onclick="showSkill('HTML','Structure of modern web apps')">HTML</div>
+    <div onclick="showSkill('CSS','Responsive layouts & UI styling')">CSS</div>
+    <div onclick="showSkill('JavaScript','Frontend logic & debugging')">JavaScript</div>
+    <div onclick="showSkill('Python','Automation & security tools')">Python</div>
+    <div onclick="showSkill('Bash','System scripting & recon tasks')">Bash</div>
+    <div onclick="showSkill('OSCP','Hands-on penetration testing skills')">OSCP</div>
+    <div onclick="showSkill('Debugging','Fixing real-world production bugs')">Debugging</div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="portfolio-grid">
+
+    <div class="portfolio-card">
+      <img src="assets/project1.png" alt="Bug Fix Example">
+      <h3>Bug Fix Example</h3>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="assets/project2.png" alt="Responsive Layout">
+      <h3>Responsive Layout</h3>
+    </div>
+
+    <div class="portfolio-card">
+      <img src="assets/project3.png" alt="JavaScript Feature">
+      <h3>JavaScript Feature</h3>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form" action="https://formspree.io/f/mvzvdzea" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Connell Christopher
+</footer>
+
+<!-- MODAL -->
+<div id="skillModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="skillTitle"></h3>
+    <p id="skillDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
