@@ -39,56 +39,65 @@
 </section>
 
 <section id="skills">
-  <h2>My Skills (Click)</h2>
+  <h2>My Skills</h2>
 
   <ul class="skills-list">
 
-    <li onclick="showSkill('Deep Web Fundamentals','HTTP/1.1, HTTP/2, caching, headers, cookies | Browser behavior (CORS, CSP, SameSite)')">
-      Deep Web Fundamentals
+    <li>
+      <div class="skill-title">Access Control</div>
+      <ul class="skill-details">
+        <li>IDOR</li>
+        <li>Privilege escalation</li>
+        <li>Multi-step logic flaws</li>
+      </ul>
     </li>
 
-    <li onclick="showSkill('Broken Access Control mastery','IDOR, role bypass, multi-step logic flaws | Horizontal vs vertical privilege escalation')">
-      Broken Access Control mastery
+    <li>
+      <div class="skill-title">API Security</div>
+      <ul class="skill-details">
+        <li>REST/GraphQL abuse</li>
+        <li>Mass assignment</li>
+        <li>Hidden endpoints</li>
+      </ul>
     </li>
 
-    <li onclick="showSkill('Injection','SQLi, SSTI, command injection | Deserialization, JNDI patterns')">
-      Injection (beyond basics)
+    <li>
+      <div class="skill-title">Injection</div>
+      <ul class="skill-details">
+        <li>SQLi</li>
+        <li>SSTI</li>
+        <li>Command injection</li>
+        <li>Deserialization patterns</li>
+      </ul>
     </li>
 
-    <li onclick="showSkill('API hacking','REST/GraphQL abuse | Parameter pollution, mass assignment | Endpoint fuzzing')">
-      API hacking (modern goldmine)
+    <li>
+      <div class="skill-title">Auth & Sessions</div>
+      <ul class="skill-details">
+        <li>OAuth/JWT issues</li>
+        <li>Password reset poisoning</li>
+        <li>Token leakage</li>
+      </ul>
     </li>
 
-    <li onclick="showSkill('Automation + scripting','JavaScript, Python | Custom fuzzers, wordlists')">
-      Automation + scripting
+    <li>
+      <div class="skill-title">Misconfigurations</div>
+      <ul class="skill-details">
+        <li>CORS issues</li>
+        <li>Security headers</li>
+        <li>Cache poisoning</li>
+        <li>Cloud exposure</li>
+      </ul>
     </li>
 
-    <li onclick="showSkill('Out-of-band detection','Blind SSRF, XSS, XXE | Burp Collaborator usage')">
-      Out-of-band detection
-    </li>
-
-    <li onclick="showSkill('Business logic exploitation','Abuse workflows (payments, auth flows, referrals)')">
-      Business logic exploitation
-    </li>
-
-    <li onclick="showSkill('Cloud & misconfigurations','S3, IAM issues | CDN/cache misconfigurations')">
-      Cloud & misconfigurations
-    </li>
-
-    <li onclick="showSkill('Authentication & session attacks','OAuth, JWT flaws | Token leakage, reset poisoning')">
-      Authentication & session attacks
-    </li>
-
-    <li onclick="showSkill('Recon','Subdomain discovery, endpoint mapping, fingerprinting')">
-      Recon & attack surface mapping
-    </li>
-
-    <li onclick="showSkill('Source code review','Reading JS/backend logic for bugs')">
-      Reading source code
-    </li>
-
-    <li onclick="showSkill('Report writing','Clear PoC, impact explanation, reproducible steps')">
-      Report writing
+    <li>
+      <div class="skill-title">OAST / Blind Bugs</div>
+      <ul class="skill-details">
+        <li>SSRF</li>
+        <li>Blind XSS</li>
+        <li>XXE</li>
+        <li>Out-of-band techniques</li>
+      </ul>
     </li>
 
   </ul>
