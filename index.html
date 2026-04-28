@@ -13,6 +13,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+  <script>
+document.querySelectorAll(".skill-title").forEach(title => {
+  title.addEventListener("click", () => {
+    const details = title.nextElementSibling;
+
+    // toggle visibility
+    if (details.style.display === "block") {
+      details.style.display = "none";
+    } else {
+      details.style.display = "block";
+    }
+  });
+});
+</script>
+
 <body>
 
 <header>
