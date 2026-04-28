@@ -6,15 +6,11 @@
 
 <title>Connell Christopher - Bug Hunter & Web Developer</title>
 
-   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="favicon.png">
 </head>
 
 <body>
@@ -37,7 +33,7 @@
     <h2>About Me</h2>
     <p>
       I’m Connell Christopher, a bug hunter and web developer focused on identifying vulnerabilities, fixing frontend issues, and building secure, responsive applications.
-I don’t just build websites — I secure, maintain, and continuously improve them. Using my bug hunting experience, I proactively identify and fix vulnerabilities, perform regular updates, and ensure your application stays reliable and secure. I also help promote your website, ensuring it reaches the right audience and maintains strong performance over time.
+      I don’t just build websites — I secure, maintain, and continuously improve them.
     </p>
   </div>
 </section>
@@ -45,46 +41,57 @@ I don’t just build websites — I secure, maintain, and continuously improve t
 <section id="skills">
   <h2>My Skills (Click)</h2>
 
-  <div class="skills-list">
-    <div onclick="showSkill('Deep Web Fundamentals','HTTP/1.1, HTTP/2, caching, headers, cookies
-Browser behavior (CORS, CSP, SameSite)')">Deep Web Fundamentals</div>
-     
-    <div onclick="showSkill('Broken Access Control mastery','IDOR, role bypass, multi-step logic flaws
-Horizontal vs vertical privilege escalation')">Broken Access Control mastery</div>
-     
-    <div onclick="showSkill('Injection','SQLi (boolean/time-based), SSTI, command injection
-Deserialization, JNDI-style patterns')">Injection (beyond basics)</div>
-     
-    <div onclick="showSkill('API hacking (modern goldmine)','REST/GraphQL abuse
-Parameter pollution, mass assignment
-Hidden endpoints via fuzzing')">API hacking (modern goldmine)/div>
-     
-    <div onclick="showSkill('Automation + scripting','JavaScript (browser + Node)
-Python for tooling
-Custom fuzzers, wordlists')">Automation + scripting</div>
-       
-    <div onclick="showSkill('Out-of-band detection','Blind SSRF, blind XSS, XXE
-Using tools like Burp Suite Collaborator')">Out-of-band detection</div>
+  <ul class="skills-list">
 
-    <div oneclick="showSkill('Business logic exploitation','Abuse workflows (payments, auth flows, referrals)
-Think like: “how can this system be gamed?”')"> Business logic exploitation</div>  
+    <li onclick="showSkill('Deep Web Fundamentals','HTTP/1.1, HTTP/2, caching, headers, cookies | Browser behavior (CORS, CSP, SameSite)')">
+      Deep Web Fundamentals
+    </li>
 
-    <div oneclick="showSkill('Cloud & misconfigurations','S3 buckets, exposed storage, IAM mistakes
-CDN/proxy behavior, cache poisoning')">Cloud & misconfigurations</div> 
+    <li onclick="showSkill('Broken Access Control mastery','IDOR, role bypass, multi-step logic flaws | Horizontal vs vertical privilege escalation')">
+      Broken Access Control mastery
+    </li>
 
-    <div oneclick="showSkill('Authentication & session attacks','OAuth flaws, JWT issues
-Password reset poisoning
-Token leakage / reuse')">Authentication & session attacks</div> 
+    <li onclick="showSkill('Injection','SQLi, SSTI, command injection | Deserialization, JNDI patterns')">
+      Injection (beyond basics)
+    </li>
 
-    <div oneclick="showSkill('Recon & attack surface mapping','Subdomain discovery
-Endpoint enumeration Tech fingerprinting')">Recon & attack surface mapping</div>
+    <li onclick="showSkill('API hacking','REST/GraphQL abuse | Parameter pollution, mass assignment | Endpoint fuzzing')">
+      API hacking (modern goldmine)
+    </li>
 
-    <div oneclick="showSkill('Reading source code','Reading source code')">Reading source code</div>   
+    <li onclick="showSkill('Automation + scripting','JavaScript, Python | Custom fuzzers, wordlists')">
+      Automation + scripting
+    </li>
 
-    <div oneclick=showSkill('Report writing','Clear PoC
-Impact explanation
-Repro steps')>Report writing</div>   
-  </div>
+    <li onclick="showSkill('Out-of-band detection','Blind SSRF, XSS, XXE | Burp Collaborator usage')">
+      Out-of-band detection
+    </li>
+
+    <li onclick="showSkill('Business logic exploitation','Abuse workflows (payments, auth flows, referrals)')">
+      Business logic exploitation
+    </li>
+
+    <li onclick="showSkill('Cloud & misconfigurations','S3, IAM issues | CDN/cache misconfigurations')">
+      Cloud & misconfigurations
+    </li>
+
+    <li onclick="showSkill('Authentication & session attacks','OAuth, JWT flaws | Token leakage, reset poisoning')">
+      Authentication & session attacks
+    </li>
+
+    <li onclick="showSkill('Recon','Subdomain discovery, endpoint mapping, fingerprinting')">
+      Recon & attack surface mapping
+    </li>
+
+    <li onclick="showSkill('Source code review','Reading JS/backend logic for bugs')">
+      Reading source code
+    </li>
+
+    <li onclick="showSkill('Report writing','Clear PoC, impact explanation, reproducible steps')">
+      Report writing
+    </li>
+
+  </ul>
 </section>
 
 <section id="portfolio">
