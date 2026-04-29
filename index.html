@@ -204,6 +204,18 @@ help developers and businesses stay secure by finding and reporting weaknesses e
   </div>
 </div>
 
+  <script>
+document.querySelectorAll(".skill-title").forEach(title => {
+  title.addEventListener("click", () => {
+    const details = title.nextElementSibling;
+
+    // toggle visibility
+    details.style.display =
+      details.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+
 <script src="script.js"></script>
 
 </body>
