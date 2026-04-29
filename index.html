@@ -47,71 +47,110 @@ document.querySelectorAll(".skill-title").forEach(title => {
   <div>
     <h2>About Me</h2>
     <p>
-      I’m Connell Christopher, a bug hunter and web developer focused on identifying vulnerabilities, fixing frontend issues, and building secure, responsive applications.
-      I don’t just build websites — I secure, maintain, and continuously improve them.
+ Hi, I’m Connell Christopher — a bug bounty hunter and web security specialist.
+I focus on identifying real-world vulnerabilities using methodologies aligned with the OWASP Top 10 and practical training from platforms like PortSwigger Web Security Academy.
+
+I run PentraSec, a boutique web application security practice. Unlike large platforms, PentraSec is highly focused and hands-on — working closely with in-scope applications to uncover exploitable security issues before attackers do.
+
+My goal is simple:
+help developers and businesses stay secure by finding and reporting weaknesses early, so they can focus on building while I handle the security layer — from hidden attack paths to overlooked exposures that could impact trust and clients.
     </p>
   </div>
 </section>
 
 <section id="skills">
-  <h2>My Skills</h2>
+  <h2>Web Security Skills (OWASP / PortSwigger Aligned)</h2>
 
   <ul class="skills-list">
 
-    <li>
+    <li class="skill-item">
+      <div class="skill-title">Authentication</div>
+      <ul class="skill-details">
+        <li>Login bypass techniques</li>
+        <li>Password reset flaws</li>
+        <li>Session fixation</li>
+        <li>JWT attacks (none/weak signature)</li>
+        <li>OAuth misconfigurations</li>
+      </ul>
+    </li>
+
+    <li class="skill-item">
       <div class="skill-title">Access Control</div>
       <ul class="skill-details">
-        <li>IDOR</li>
-        <li>Privilege escalation</li>
-        <li>Multi-step logic flaws</li>
+        <li>IDOR exploitation</li>
+        <li>Horizontal & vertical privilege escalation</li>
+        <li>Multi-step logic bypass</li>
+        <li>Broken object-level authorization</li>
       </ul>
     </li>
 
-    <li>
-      <div class="skill-title">API Security</div>
-      <ul class="skill-details">
-        <li>REST/GraphQL abuse</li>
-        <li>Mass assignment</li>
-        <li>Hidden endpoints</li>
-      </ul>
-    </li>
-
-    <li>
+    <li class="skill-item">
       <div class="skill-title">Injection</div>
       <ul class="skill-details">
-        <li>SQLi</li>
-        <li>SSTI</li>
+        <li>SQL Injection (blind, time-based, error-based)</li>
         <li>Command injection</li>
-        <li>Deserialization patterns</li>
+        <li>Server-side template injection (SSTI)</li>
+        <li>LDAP / XML injection</li>
+        <li>Deserialization attacks</li>
       </ul>
     </li>
 
-    <li>
-      <div class="skill-title">Auth & Sessions</div>
+    <li class="skill-item">
+      <div class="skill-title">Cross-Site Scripting (XSS)</div>
       <ul class="skill-details">
-        <li>OAuth/JWT issues</li>
-        <li>Password reset poisoning</li>
-        <li>Token leakage</li>
+        <li>Reflected XSS</li>
+        <li>Stored XSS</li>
+        <li>DOM-based XSS</li>
+        <li>Filter bypass techniques</li>
       </ul>
     </li>
 
-    <li>
-      <div class="skill-title">Misconfigurations</div>
+    <li class="skill-item">
+      <div class="skill-title">CSRF & Session Attacks</div>
       <ul class="skill-details">
-        <li>CORS issues</li>
-        <li>Security headers</li>
-        <li>Cache poisoning</li>
-        <li>Cloud exposure</li>
+        <li>CSRF token bypass</li>
+        <li>SameSite cookie abuse</li>
+        <li>Session hijacking</li>
+        <li>Session replay attacks</li>
       </ul>
     </li>
 
-    <li>
-      <div class="skill-title">OAST / Blind Bugs</div>
+    <li class="skill-item">
+      <div class="skill-title">Server-Side Request Forgery (SSRF)</div>
       <ul class="skill-details">
-        <li>SSRF</li>
+        <li>Internal network scanning</li>
+        <li>Cloud metadata attacks</li>
+        <li>Blind SSRF exploitation</li>
+      </ul>
+    </li>
+
+    <li class="skill-item">
+      <div class="skill-title">File Upload Vulnerabilities</div>
+      <ul class="skill-details">
+        <li>Web shell uploads</li>
+        <li>MIME-type bypass</li>
+        <li>Extension filter bypass</li>
+        <li>Image polyglots</li>
+      </ul>
+    </li>
+
+    <li class="skill-item">
+      <div class="skill-title">Security Misconfigurations</div>
+      <ul class="skill-details">
+        <li>CORS misconfigurations</li>
+        <li>Missing security headers</li>
+        <li>Exposed admin panels</li>
+        <li>Cloud storage exposure</li>
+      </ul>
+    </li>
+
+    <li class="skill-item">
+      <div class="skill-title">OAST & Blind Exploitation</div>
+      <ul class="skill-details">
         <li>Blind XSS</li>
-        <li>XXE</li>
-        <li>Out-of-band techniques</li>
+        <li>Out-of-band SQLi</li>
+        <li>SSRF callback techniques</li>
+        <li>DNS-based exfiltration</li>
       </ul>
     </li>
 
@@ -125,17 +164,17 @@ document.querySelectorAll(".skill-title").forEach(title => {
 
     <div class="portfolio-card">
       <img src="project1.jpg" alt="Bug Fix Example">
-      <h3>Bug Fix Example</h3>
+      <h3>OWASP Finding / Case Study</h3>
     </div>
 
     <div class="portfolio-card">
       <img src="project2.jpg" alt="Responsive Layout">
-      <h3>Responsive Layout</h3>
+      <h3>Secure Frontend Fix(XSS)</h3>
     </div>
 
     <div class="portfolio-card">
       <img src="project3.jpg" alt="JavaScript Feature">
-      <h3>JavaScript Feature</h3>
+      <h3>Client-Side Protection Example</h3>
     </div>
 
   </div>
