@@ -131,13 +131,22 @@ p{color:#555;}
   border-radius:8px;
   cursor:pointer;
 }
-
-/* FOOTER */
 footer{
   background:#0f2027;
   color:#fff;
   text-align:center;
   padding:1.5rem;
+  width:100%;
+}
+
+@media (max-width:768px){
+
+  footer{
+    padding:1rem;
+    font-size:0.9rem;
+    line-height:1.6;
+  }
+
 }
 
 /* MODAL */
