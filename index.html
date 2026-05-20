@@ -11,6 +11,71 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<style>
+.hacker-portfolio {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #050505;
+  position: relative;
+  overflow: hidden;
+}
+
+/* grid background */
+.hacker-portfolio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0,255,157,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,157,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* link */
+.glitch-link {
+  position: relative;
+  z-index: 2;
+
+  color: #00ff9d;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-decoration: none;
+
+  text-shadow: 0 0 15px rgba(0,255,157,0.6);
+  transition: 0.2s;
+}
+
+/* glitch layers */
+.glitch-link::before,
+.glitch-link::after {
+  content: "PORTFOLIO";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.glitch-link::before {
+  color: red;
+  transform: translate(2px, 0);
+  opacity: 0.6;
+}
+
+.glitch-link::after {
+  color: cyan;
+  transform: translate(-2px, 0);
+  opacity: 0.6;
+}
+
+.glitch-link:hover {
+  transform: scale(1.1);
+  letter-spacing: 10px;
+}
+</style>
+  
 </head>
 
   <script>
@@ -157,7 +222,7 @@ help developers and businesses stay secure by finding and reporting weaknesses e
   </ul>
 </section>
 
-<section id="portfolio" class="hacker-portfolio">
+<section class="hacker-portfolio">
   <a href="https://connell-christopher.github.io/portfolio/" target="_blank" class="glitch-link">
     PORTFOLIO
   </a>
