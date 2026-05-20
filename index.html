@@ -13,6 +13,14 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+/*mobile*/
+  <section class="hacker-portfolio">
+  <a href="https://connell-christopher.github.io/portfolio/" target="_blank" class="glitch-link">
+    PORTFOLIO
+  </a>
+</section>
+
+  /*portfolio*/
 .hacker-portfolio {
   height: 45vh;
   display: flex;
@@ -21,35 +29,26 @@
   background: #050505;
   position: relative;
   overflow: hidden;
+  padding: 20px;
+  text-align: center;
 }
 
-/* grid background */
-.hacker-portfolio::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(rgba(0,255,157,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,255,157,0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
-/* link */
 .glitch-link {
   position: relative;
   z-index: 2;
 
   color: #00ff9d;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 6vw, 3rem); /* FIX: responsive size */
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 4px; /* reduced from 8px */
   text-decoration: none;
 
   text-shadow: 0 0 15px rgba(0,255,157,0.6);
   transition: 0.2s;
+  word-break: break-word;
 }
 
-/* glitch layers */
+/* disable heavy glitch on small screens */
 .glitch-link::before,
 .glitch-link::after {
   content: "PORTFOLIO";
@@ -60,19 +59,26 @@
 
 .glitch-link::before {
   color: red;
-  transform: translate(2px, 0);
-  opacity: 0.6;
+  transform: translate(1px, 0);
+  opacity: 0.5;
 }
 
 .glitch-link::after {
   color: cyan;
-  transform: translate(-2px, 0);
-  opacity: 0.6;
+  transform: translate(-1px, 0);
+  opacity: 0.5;
 }
 
 .glitch-link:hover {
-  transform: scale(1.1);
-  letter-spacing: 10px;
+  transform: scale(1.05);
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .glitch-link {
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
 }
 </style>
   
