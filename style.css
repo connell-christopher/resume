@@ -54,19 +54,7 @@ section{
 h2{text-align:center;margin-bottom:2rem;color:#0f2027;}
 p{color:#555;}
 
-/* ABOUT */
-.about{
-  display:flex;
-  align-items:center;
-  gap:2rem;
-  flex-wrap:wrap;
-}
-.about img{
-  width:200px;
-  max-width:100%;
-  border-radius:50%;
-}
-.about p{max-width:600px;}
+
 
 /* SKILLS */
 .skills-list{
@@ -92,7 +80,7 @@ p{color:#555;}
 }
 .portfolio-card{
   background:#fff;
-  border-radius:12px;
+  border-radius:12px; 
   overflow:hidden;
   box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
@@ -174,12 +162,57 @@ footer{
   cursor:pointer;
 }
 
+/* ABOUT */
+.about{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2rem;
+  flex-wrap:wrap;
+}
+
+.about img{
+  width:200px;
+  max-width:100%;
+  border-radius:50%;
+}
+
+.about p{
+  width:100%;
+  max-width:600px;
+  line-height:1.7;
+  padding:0 15px;
+  word-wrap:break-word;
+}
+
 /* MOBILE */
-@media(max-width:768px){
+@media (max-width:768px){
+
   .about{
     flex-direction:column;
     text-align:center;
+    gap:1.5rem;
   }
+
+  .about img{
+    width:150px;
+  }
+
+  .about p{
+    max-width:100%;
+    font-size:0.95rem;
+    padding:0 10px;
+  }
+
+}
+
+/* GLOBAL FIXES */
+*{
+  box-sizing:border-box;
+}
+
+body{
+  overflow-x:hidden;
 }
 
 
